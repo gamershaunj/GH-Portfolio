@@ -336,7 +336,7 @@
         </p>
       </div>
       <div class="card-footer bg-transparent">
-        Technologies Used : ReactJS | CSS Flexbox | Context API 
+        Technologies Used : Matlab | Arduino | MPU 6050 
       </div>
     </div>
   
