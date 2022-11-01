@@ -326,12 +326,9 @@
           September 2016 - February 2017 
         <ul>
           <li>
-            Built a website where the user can add and remove products from a grid layout selection.
+            Developed a real time mouse control mechanism which was independent of a surface, using Arduino, MATLAB code and a Gyroscope sensor (MPU6050).
           </li>
-          <li>
-            The Hooks system of ReactJS was used along with its Context API for state management. 
-
-          </li>
+        
         </ul>
         </p>
       </div>
