@@ -1,7 +1,357 @@
 
-Hi there 👋
+<html>
+<head>
 
-I am Shaunak, a Graduate Student pursuing a Master's degree in Computer Science at Virginia Tech. I'm actively seeking an internship for Summer' 23. 
-I have previously worked as a Software Engineer at Vodafone and Gibots.
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="author" content="Shaunak Juvekar">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Connect with me on [Linkedin](https://www.linkedin.com/in/shaunak-juvekar/) 💻
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>
+    Shaunak Juvekar
+  </title>
+
+  <link rel="stylesheet" href="/stylesheets/styles.css">
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascript/animation.js"></script>
+
+<body>
+
+<div class="container mt-5 mb-5">
+
+  <div class="card mb-3 p-3 border-dark has-animation animation-ltr">
+      <div class="row g-0">
+
+        <div class="col-md-8">
+
+          <div class="card-body">
+            <p style="text-align:center">
+            <h1>Shaunak Juvekar</h1>
+            </p>
+            <p>
+              I am a graduate student at Virginia Tech, pursuing my Master's in Computer Science degree from the College of Engineering in Blacksburg, Virginia.
+              My current courses are Information Storage and Retrieval, Network Architecture and Programming, and Data Analytics.
+              <br>
+              <br>
+              Feel free to check out my resume or reach out me via email.
+            </p>
+            <p>
+        
+              <a href="mailto:jshaunak@vt.edu">Email</a> &nbsp/&nbsp
+              <a href="../data/Shaunak_Resume.pdf">Resume</a> &nbsp/&nbsp
+              <a href="https://www.linkedin.com/in/shaunak-juvekar/">LinkedIn</a> &nbsp/&nbsp
+              <a href="https://github.com/shaunakjuvekar/">Github</a>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <a href="/"><img alt="profile photo" src="../images/SJ_waterfall.jpeg" class="img-fluid rounded-start profile-image"></a>
+
+        </div>
+      </div>
+
+    </div>
+
+  <div>
+    <h3>
+      Skills
+    </h3>
+    <div class="card mb-3 border-dark has-animation animation-ltr">
+      <div class="card-body" id="skills">
+      </div>
+    </div>
+  </div>
+  <script>
+    var skills = [
+      {
+        category:"Programming Languages",
+        skill:"Java, Python, Javascript, Lua, C"
+      },
+      {
+        category:"Web Technologies",
+        skill:"Node JS, React JS, HTML, CSS, Bootstrap, Semantic UI"
+      },
+      {
+        category:"Database Technologies",
+        skill:"MySQL, PostgreSQL, MongoDB"
+      },
+      {
+        category:"Other Tools",
+        skill:"Jupyter Notebooks, Git, Docker, Postman, JIRA, Jenkins, Matlab "
+      },
+      {
+        category:"Industry Skills",
+        skill:"Test Driven Development, SOLID Principles, Agile Development, OOP, Debugging, Troubleshooting, CI/CD"
+      },
+      {
+        category:"Soft Skills",
+        skill:" Effective communication, Goal oriented, Open-minded, Adaptable, Flexible, Critical thinking and Problem solving"
+      },
+    ];
+    // "+myobj[""]+"
+    for (i = 0; i< skills.length; i++) {
+      var myobj=  skills[i];
+      var item = "<h5 class=\"card-title\">"+myobj["category"]+"</h5>" +
+              "<p class=\"card-text\">" +myobj["skill"]+
+              "</p>"
+
+      $(item).appendTo("#skills")
+    }
+
+  </script>
+
+
+  <div id="education">
+    <h3>Education</h3>
+  </div>
+  <script>
+    var education = [
+      {
+        university: "Virginia Tech",
+        universityLink: "https://vt.edu/",
+        degree : "Master's in Computer Science",
+        gpa: "N/A",
+        fromTo : "Aug 2022 - May 2024 (Expected)"
+      },
+      {
+        university: "Savitribai Phule Pune University",
+        universityLink: "http://www.unipune.ac.in/",
+        degree : "Bachelor's in Electronics and Telecommunication Engineering",
+        gpa: "9.1/10.0",
+        fromTo : "Aug 2014 - May 2018"
+      }];
+    for (i = 0; i< education.length; i++) {
+      var myobj=  education[i];
+      var item = "<div class=\"card mb-3 border-dark has-animation animation-ltr\">" +
+              "                <div class=\"card-body\">" +
+              "                    <h5 class=\"card-title\"><a style=\"font-size: large\" href=\""+myobj["universityLink"]+"\">"+myobj["university"]+"</a></h5>" +
+              "                    <p class=\"card-text\">"+ myobj["degree"]+"</p>" +
+              "                    <p class=\"card-text\">"+"CGPA : "+myobj["gpa"]+" | "+myobj["fromTo"]+"</p>" +
+              "                </div>" +
+              "            </div>"
+
+      $(item).appendTo("#education")
+    }
+
+    var item = "<div class=\"card mb-3 border-dark has-animation animation-ltr\">" +
+            "                <div class=\"card-body\">" +
+            "                    <h5 class=\"card-title\">Relevant Coursework</h5>" +
+            "                    <p class=\"card-text\">" +
+            "                        Data Structures and Algorithms, Object Oriented Programming, Computer Networks, Digital Image processing, Systems Programming and Operating Systems, Artificial Intelligence, Soft Computing" +
+            "                    </p>" +
+            "                </div>" +
+            "            </div>"
+    $(item).appendTo("#education")
+
+  </script>
+
+  <div id="experience">
+    <h3>Work Experience</h3>
+  </div>
+  <script>
+    var exp = [
+      {
+        position: "Software Developer",
+        org:"Gibots",
+        orgLink: "https://www.gibots.com",
+        place: "Pune, India",
+        fromToDate: "July 2020 - July 2021",
+        points :
+                [
+                    "Responsible for providing end to end solutions which includes developing APIs using ExpressJS and integration of various libraries written in Java, Node and Python.",
+                    "Built a custom Rule Engine which carries out Javascript and Regex evaluation for an array of JSON.",
+                    "Delivered complete rule and code based module automating client’s processes, generating up to 90 percent savings in manpower cost.",
+                    "Core team member in charge of the architectural solution of the project along with time estimation and planning.",
+                    
+                ],
+        technology : "Node JS | Typescript | Apache PDFBox | MongoDB | Python | Officegen"
+      },
+      {
+        position: "Software Engineer",
+        org:"Vodafone",
+        orgLink: "https://vodafone.com/",
+        place: "Pune, India",
+        fromToDate: "July 2018 - March 2020",
+        points :
+                [
+                        "Implemented automation solutions for Vodafone TV for their STB(Set-top Box), Web and Android platforms using Python and Lua.",
+                        "Analyzed and integrated Kaltura API’s and custom logic functions in GUI and API scripts.",
+                        "Used OpenCV and Google’s Tesseract for converting scanned image into text reducing reliance on a paid third party tool."
+                ],
+        technology : "Python | Lua | OpenCV | RESTful Web services | Agile"
+      },
+      
+      {
+        position: "Project Intern",
+        org:"Aker Solutions",
+        orgLink: "http://www.akersolutions.com/",
+        place: "Pune, India",
+        fromToDate: "July 2017 - Mar 2018",
+        points :
+                [
+                        "Interfaced driver circuits, implemented feedback mechanisms and actuator valve control for developing a 6DOF robotic arm for an ROV.",
+                        "Implemented serial communication, socket programming and joystick control using embedded C and Python.",
+                        
+                ],
+        technology : "Python | Socket Programming | Raspberry Pi | Arduino | MPU 6050 "
+      }
+    ];
+    // "+myobj[""]+"
+    for (i = 0; i< exp.length; i++) {
+      var myobj=  exp[i];
+      var item = "    <div class=\"card mb-3 border-dark has-animation animation-ltr\">" +
+              "      <div class=\"card-body\">" +
+              "        <h5 class=\"card-title\">"+myobj["position"]+" @ <a style=\"font-size: large\" href=\""+myobj["orgLink"]+"\">"+myobj["org"]+"</a></h5>" +
+              "        <p class=\"card-text\">" +
+              "          "+myobj["place"]+" |\t"+myobj["fromToDate"]+
+              "        <ul>"
+      for(j =0; j < myobj["points"].length; j++) {
+        item += "<li>"+myobj["points"][j]+ "</li>"
+      }
+      item += "</ul></p>" +
+              "      </div>" +
+              "      <div class=\"card-footer bg-transparent\">" +
+              "        Technologies Used : "+myobj["technology"]+
+              "      </div>" +
+              "    </div>"
+
+      $(item).appendTo("#experience")
+    }
+
+  </script>
+
+  <div id="leadership">
+    <h3>
+      Leadership Expereince
+    </h3>
+  </div>
+  <script>
+    var exp = [
+      {
+        position: "Module Lead",
+        org:"Gibots",
+        orgLink: "https://www.gibots.com",
+        place: "Pune, India",
+        fromToDate: "July 2020 - July 2021",
+        points :
+                [
+                        "As the module lead, had regular meetings with the client to discuss work status, report issues regarding implementation and get feedback on the production delivery",
+                        "Mentored new joinees in Gibots JUTA development team. Had bi-weekly meetings to check their progress and guide them.",
+                        "Helped and advised the mentees on which technologies to revise and focus on, for a smooth transition onto their respective projects."
+                ],
+        technology : "Java | Python | MySQL | Docker | AWS | GitHub | JavaScript | API | REST APIs | Agile"
+      },
+    ];
+    // "+myobj[""]+"
+    for (i = 0; i< exp.length; i++) {
+      var myobj=  exp[i];
+      var item = "    <div class=\"card mb-3 border-dark has-animation animation-ltr\">" +
+              "      <div class=\"card-body\">" +
+              "        <h5 class=\"card-title\">"+myobj["position"]+" @ <a style=\"font-size: large\" href=\""+myobj["orgLink"]+"\">"+myobj["org"]+"</a></h5>" +
+              "        <p class=\"card-text\">" +
+              "          "+myobj["place"]+" |\t"+myobj["fromToDate"]+
+              "        <ul>"
+      for(j =0; j < myobj["points"].length; j++) {
+        item += "<li>"+myobj["points"][j]+"</li>"
+      }
+      $(item).appendTo("#leadership")
+    }
+
+  </script>
+
+
+  <div id="projects">
+    <h3>
+      Projects
+    </h3>
+
+    <div class="card mb-3 border-dark has-animation animation-ltr">
+      <div class="card-body">
+        <h5 class="card-title">Book Sharing Platform</h5>
+        <p class="card-text">
+          June 2020 - June 2020 | <a href="https://github.com/shaunakjuvekar/Book-Sharer/">GitHub link</a>
+
+        <ul>
+          <li>
+            A web application which enables exchange of books by different users of the website.
+          </li>
+          <li>
+            Used ExpressJS as a server, MongoDB as a database and HTML, CSS and Javascript for the frontend.
+          </li>
+          <li>
+            Implemented authentication and authorization middlewares for API security.
+          </li>
+          <li>
+            Hosting is done on Heroku servers.
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer bg-transparent">
+        Technologies Used : NodeJS | PassportJS | MongoDB | Bootstrap | HTML | EJS
+      </div>
+    </div>
+
+    <div class="card mb-3 border-dark has-animation animation-ltr">
+      <div class="card-body">
+        <h5 class="card-title">E-Commerce Portal</h5>
+        <p class="card-text">
+          August 2022 - September 2022 | <a href="https://github.com/shaunakjuvekar/E-commerce-Portal">Github Link</a>
+        <ul>
+          <li>
+            Built a website where the user can add and remove products from a grid layout selection.
+          </li>
+          <li>
+            The Hooks system of ReactJS was used along with its Context API for state management. 
+
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer bg-transparent">
+        Technologies Used : ReactJS | CSS Flexbox | Context API 
+      </div>
+    </div>
+
+    <div class="card mb-3 border-dark has-animation animation-ltr">
+      <div class="card-body">
+        <h5 class="card-title">Mouse Gesture Control using Motion Sensor</h5>
+        <p class="card-text">
+          September 2016 - February 2017 
+        <ul>
+          <li>
+            Built a website where the user can add and remove products from a grid layout selection.
+          </li>
+          <li>
+            The Hooks system of ReactJS was used along with its Context API for state management. 
+
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer bg-transparent">
+        Technologies Used : Matlab | Arduino | MPU 6050 
+      </div>
+    </div>
+  
+  
+
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
