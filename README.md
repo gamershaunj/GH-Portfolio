@@ -270,6 +270,51 @@
     <h3>
       Projects
     </h3>
+    
+     <div class="card mb-3 border-dark has-animation animation-ltr">
+      <div class="card-body">
+        <h5 class="card-title">Search Engine for ETD data</h5>
+        <p class="card-text">
+          October 2022 - December 2022 | <a href="https://github.com/shaunakjuvekar/E-commerce-Portal">Github Link</a>
+        <ul>
+          <li>
+            Implemented the backend functionality of a search engine using Elasticsearch and Python.
+          </li>
+          <li>
+            Developed data ingestion scripts for Elasticsearch, search API’s and logging functionality for ML models.
+
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer bg-transparent">
+        Technologies Used : Elasticsearch | Python | ReactJS 
+      </div>
+    </div>
+    
+     <div class="card mb-3 border-dark has-animation animation-ltr">
+      <div class="card-body">
+        <h5 class="card-title">Reliable Packet Delivery System</h5>
+        <p class="card-text">
+          November 2022 - December 2022 | <a href="https://github.com/shaunakjuvekar/E-commerce-Portal">Github Link</a>
+        <ul>
+          <li>
+            Designed and developed a transport protocol that provided reliable datagram service amidst dropped and duplicated
+packets and high latency environments.
+          </li>
+          <li>
+            Additionally, implemented the TCP Reno algorithm for congestion control and analyzed performance under a variety of
+conditions.
+
+          </li>
+        </ul>
+        </p>
+      </div>
+      <div class="card-footer bg-transparent">
+        Technologies Used : Computer Networks fundamentals| Python | Multithreading 
+      </div>
+    </div>
+
 
     <div class="card mb-3 border-dark has-animation animation-ltr">
       <div class="card-body">
