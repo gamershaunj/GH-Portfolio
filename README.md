@@ -282,7 +282,6 @@
           </li>
           <li>
             Developed data ingestion scripts for Elasticsearch, search API’s and logging functionality for ML models.
-
           </li>
         </ul>
         </p>
@@ -305,7 +304,6 @@ packets and high latency environments.
           <li>
             Additionally, implemented the TCP Reno algorithm for congestion control and analyzed performance under a variety of
 conditions.
-
           </li>
         </ul>
         </p>
@@ -354,7 +352,6 @@ conditions.
           </li>
           <li>
             The Hooks system of ReactJS was used along with its Context API for state management. 
-
           </li>
         </ul>
         </p>
@@ -373,7 +370,6 @@ conditions.
           <li>
             Developed a real time mouse control mechanism which was independent of a surface, using Arduino, MATLAB code and a Gyroscope sensor (MPU6050).
           </li>
-        
         </ul>
         </p>
       </div>
