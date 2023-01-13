@@ -71,11 +71,11 @@
     var skills = [
       {
         category:"Programming Languages",
-        skill:"Java, Python, Javascript, Lua, C"
+        skill:"Python, Javascript, Java, Lua, C"
       },
       {
         category:"Web Technologies",
-        skill:"Node JS, React JS, HTML, CSS, Bootstrap, Semantic UI"
+        skill:"Node JS, Flask, React JS, HTML, CSS, Bootstrap"
       },
       {
         category:"Database Technologies",
@@ -116,9 +116,10 @@
         university: "Virginia Tech",
         universityLink: "https://vt.edu/",
         degree : "Master's in Computer Science",
-        gpa: "N/A",
+        gpa: "3.66/4",
         fromTo : "Aug 2022 - May 2024 (Expected)"
       },
+      
       {
         university: "Savitribai Phule Pune University",
         universityLink: "http://www.unipune.ac.in/",
@@ -141,7 +142,17 @@
 
     var item = "<div class=\"card mb-3 border-dark has-animation animation-ltr\">" +
             "                <div class=\"card-body\">" +
-            "                    <h5 class=\"card-title\">Relevant Coursework</h5>" +
+            "                    <h5 class=\"card-title\">Master's Coursework</h5>" +
+            "                    <p class=\"card-text\">" +
+            "                        Information Storage and Retrieval, Data Analytics, Network Architecture and Programming" +
+            "                    </p>" +
+            "                </div>" +
+            "            </div>"
+    $(item).appendTo("#education")
+
+    var item = "<div class=\"card mb-3 border-dark has-animation animation-ltr\">" +
+            "                <div class=\"card-body\">" +
+            "                    <h5 class=\"card-title\">Bachelor's Coursework</h5>" +
             "                    <p class=\"card-text\">" +
             "                        Data Structures and Algorithms, Object Oriented Programming, Computer Networks, Digital Image processing, Systems Programming and Operating Systems, Artificial Intelligence, Soft Computing" +
             "                    </p>" +
@@ -164,13 +175,13 @@
         fromToDate: "July 2020 - July 2021",
         points :
                 [
-                    "Responsible for providing end to end solutions which includes developing APIs using ExpressJS and integration of various libraries written in Java, Node and Python.",
-                    "Built a custom Rule Engine which carries out Javascript and Regex evaluation for an array of JSON.",
-                    "Delivered complete rule and code based module automating client’s processes, generating up to 90 percent savings in manpower cost.",
-                    "Core team member in charge of the architectural solution of the project along with time estimation and planning.",
+                    "Implemented end to end solutions which includes developing APIs using ExpressJS and integration of various libraries written in Java, Javascript and Python, generating up to 90 percent savings in manpower cost.",
+                    "Built a custom Rule Engine which carries out Javascript and Regex evaluations which automated and streamlined client’s processes.",
+                    "As the module lead, coordinated regular meetings with the client to discuss work status, report issues regarding implementation and get feedback on production delivery",
+                    "Devised the architectural solution of project and collaborated with project managers for time estimation and planning.",
                     
                 ],
-        technology : "Node JS | Typescript | Apache PDFBox | MongoDB | Python | Officegen"
+        technology : "Node JS | Python | Apache PDFBox | MongoDB | Officegen"
       },
       {
         position: "Software Engineer",
@@ -180,11 +191,11 @@
         fromToDate: "July 2018 - March 2020",
         points :
                 [
-                        "Implemented automation solutions for Vodafone TV for their STB(Set-top Box), Web and Android platforms using Python and Lua.",
+                        "Engineered automation solutions for Vodafone TV for their STB(Set-top Box), Web and Android platforms using Python and Lua.",
                         "Analyzed and integrated Kaltura API’s and custom logic functions in GUI and API scripts.",
-                        "Used OpenCV and Google’s Tesseract for converting scanned image into text reducing reliance on a paid third party tool."
+                        "Developed multi-folder data gathering scripts which parsed through XML data."
                 ],
-        technology : "Python | Lua | OpenCV | RESTful Web services | Agile"
+        technology : "Python | Lua | RESTful Web services | Agile"
       },
       
       {
@@ -275,7 +286,7 @@
   <div class="card-body">
     <h5 class="card-title">Search Engine for ETD data</h5>
     <p class="card-text">
-      October 2022 - December 2022 | <a href="https://github.com/shaunakjuvekar/E-commerce-Portal">Github Link</a>
+      October 2022 - December 2022 
     <ul>
       <li>
         Implemented the backend functionality of a search engine using Elasticsearch and Python.
@@ -296,7 +307,7 @@
   <div class="card-body">
     <h5 class="card-title">Reliable Packet Delivery System</h5>
     <p class="card-text">
-      November 2022 - December 2022 | <a href="https://github.com/shaunakjuvekar/E-commerce-Portal">Github Link</a>
+      November 2022 - December 2022 
     <ul>
       <li>
         Designed and developed a transport protocol that provided reliable datagram service amidst dropped and duplicated
@@ -309,7 +320,7 @@ packets and high latency environments.
     </p>
   </div>
   <div class="card-footer bg-transparent">
-    Technologies Used : Computer Networks fundamentals| Python | Multithreading 
+    Technologies Used : Computer Networks fundamentals| Python 
   </div>
 </div>
 
@@ -367,11 +378,7 @@ packets and high latency environments.
       <div class="card-body">
         <h5 class="card-title">Mouse Gesture Control using Motion Sensor</h5>
         <p class="card-text">
-<<<<<<< HEAD
           September 2016 - February 2017 
-=======
-          August 2022 - September 2022 | <a href="https://github.com/shaunakjuvekar/E-commerce-Portal">Github Link</a>
->>>>>>> b377d4d446f3e96084fe9a7fe26d42fad56b589f
         <ul>
           <li>
             Developed a real time mouse control mechanism which was independent of a surface, using Arduino, MATLAB code and a Gyroscope sensor (MPU6050).
